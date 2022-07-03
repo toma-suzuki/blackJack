@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>BlackJack</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card_list_area" id="card_list_area"></div>
+<div class="area_box" id="dealer_area">
+  <p class="area_title">DEALER</p>
+  <span class="score" id="dealer_score"></span>
+  <div class="card_area" id="dealer_card_area"></div>
+</div>
+<div class="area_box" id="player_area">
+  <p class="area_title">PLAYER</p>
+  <span class="score" id="player_score"></span>
+  <div class="card_area" id="player_card_area"></div>
+  <div class="button_area" id="button_area">
+    <a class="hit_button" id="hit_button" onclick="addPlayerTrump()">HIT</a>
+    <a class="stand_button" id="stand_button" onclick="startGame()">STAND</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
